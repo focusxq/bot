@@ -1,0 +1,21 @@
+tg-bot/
+├── src/main/java/
+│   └── tgbot/
+│       ├── Main.java                  // Точка входа в приложение
+│       ├── bot/
+│       │   ├── Bot.java               // Основной класс бота
+│       │   └── BotConfig.java         // Конфигурация бота (токен, имя и т.д.)
+│       ├── handlers/
+│       │   ├── CommandHandler.java    // Обработка команды /start
+│       │   ├── CallbackHandler.java   // Обработка инлайн-кнопок
+│       │   └── MessageHandler.java    // Обработка текстовых сообщений (например, ввод чисел)
+│       ├── model/
+│       │   ├── Character.java         // Класс для описания персонажа
+│       │   ├── InventoryItem.java     // Класс для предметов инвентаря
+│       │   └── Skill.java             // Класс для умений персонажа
+│       └── service/
+│           ├── CharacterService.java  // Логика для работы с персонажами
+│           ├── DiceService.java       // Логика для "Кинуть кости"
+│           └── InventoryService.java
+│           └── SkillService.java // GPT sam dobavil novyy servis
+└── pom.xml                             // Maven конфигурация
